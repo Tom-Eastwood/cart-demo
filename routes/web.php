@@ -16,3 +16,7 @@ Route::get('/', 'ProductsController@index');
 Route::resource('products', 'ProductsController', ['only' => [
     'index', 'show'
 ]]);
+
+Route::get('/cart/view', 'CartController@index');
+Route::get('/cart/store/{sku}', 'CartController@store');
+Route::get('/cart/destroy/{key}', 'CartController@destroy');

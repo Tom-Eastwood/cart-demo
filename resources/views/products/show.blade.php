@@ -17,6 +17,8 @@
                     @endforeach
                 </ul>
             @endif
+
+            <a href="#" class="btn btn-info cart-add" title="{{$product->sku}}">ADD TO CART</a>
         </div>
     </div>
 </div>

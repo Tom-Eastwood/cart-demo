@@ -10,7 +10,7 @@
                 <div class="well">
                     <img src="{{URL::to('/')}}/img/products/{{$product->sku}}/thumb.jpg" alt="{{$product->sku}} thumbnail" />
                     <h3>{{$product->name}}</h3>
-                    <a href="" class="btn btn-info">ADD TO CART</a>
+                    <a href="#" class="btn btn-info cart-add" title="{{$product->sku}}">ADD TO CART</a>
                     <a href="{{ route('products.show', $product->sku) }}" class="btn btn-success">VIEW</a>
 
                 </div>

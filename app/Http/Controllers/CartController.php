@@ -53,5 +53,7 @@ class CartController extends Controller
 
         //add the array to a new cart session
         $request->session()->put('cart', $cart_items);
+
+        return redirect('cart/view');
     }
 }

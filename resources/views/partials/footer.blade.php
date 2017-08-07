@@ -8,9 +8,5 @@
             <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Call Us</a></li>
         </ul>
 
-        <ul>
-            <li>Info 1</li>
-            <li>info 2</li>
-        </ul>
     </div>
 </footer>

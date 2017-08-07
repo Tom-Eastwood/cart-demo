@@ -13,15 +13,18 @@
     <!-- Styles -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{URL('/')}}/css/main.min.css">
 </head>
 <body>
 
-    @include('partials/header')
+    <div class="container-fluid">
+        @include('partials/header')
 
-    @yield('content')
+        @yield('content')
 
-    @include('partials/footer')
+        @include('partials/footer')
+    </div>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

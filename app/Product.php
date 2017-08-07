@@ -19,4 +19,9 @@ class Product extends Model
     public function details(){
         return $this->hasMany('App\ProductDetail');
     }
+
+    public static function getName($sku){
+        $product = Product::find($sku);
+        return $product->name;
+    }
 }

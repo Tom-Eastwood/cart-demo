@@ -15,14 +15,14 @@ function addToCart(sku, e){
     $.ajax({
         type: "GET",
         url: base_url+'/cart/store/'+sku,
-        success: console.log('success')
+        success: notifyCustomer("Item as been added to your cart.")
     });
 }
 
-function removeFromCart(sku, e){
-    $.ajax({
-        type: "GET",
-        url: base_url+'/cart/destroy/'+sku,
-        success: console.log('destroyed')
-    });
+function notifyCustomer(notificationMessage){
+    $('body').prepend(
+        '<div class="alert">'+notificationMessage+'</div>'
+    );
+
+    window.setTimeout(function(){$(".alert").remove()}, 3000);
 }
